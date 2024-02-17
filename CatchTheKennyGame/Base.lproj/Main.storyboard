@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CatchTheKennyGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="kenny" translatesAutoresizingMaskIntoConstraints="NO" id="rHa-1f-7xA">
+                                <rect key="frame" x="15" y="232" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="enj-kq-spq"/>
+                                    <constraint firstAttribute="width" constant="100" id="jfT-3A-Nma"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEP-sF-AlA">
+                                <rect key="frame" x="83" y="81.5" width="248" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Lkx-sQ-OP2"/>
+                                    <constraint firstAttribute="width" constant="248" id="dNf-Fp-UP5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0W7-Ue-iYM">
+                                <rect key="frame" x="93.5" y="151.5" width="227" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="227" id="nEj-AH-Isv"/>
+                                    <constraint firstAttribute="height" constant="60" id="nTe-Jq-ApH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Highscore: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIC-a0-ae3">
+                                <rect key="frame" x="94" y="726" width="227" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="nwh-rV-1hY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0W7-Ue-iYM" firstAttribute="top" secondItem="nEP-sF-AlA" secondAttribute="bottom" constant="10" id="DEs-GX-2SJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LIC-a0-ae3" secondAttribute="bottom" constant="76" id="LRB-w8-fxx"/>
+                            <constraint firstItem="nEP-sF-AlA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PN2-P3-axV"/>
+                            <constraint firstItem="0W7-Ue-iYM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="W8c-4y-hJD"/>
+                            <constraint firstItem="LIC-a0-ae3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="ePB-bd-P8A"/>
+                            <constraint firstItem="nEP-sF-AlA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33.5" id="fOI-MR-rvC"/>
+                            <constraint firstItem="LIC-a0-ae3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r9O-0R-84m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="highScoreLabel" destination="LIC-a0-ae3" id="rk1-t8-ktT"/>
+                        <outlet property="kenny1" destination="rHa-1f-7xA" id="mio-Pi-XG5"/>
+                        <outlet property="scoreLabel" destination="0W7-Ue-iYM" id="Djx-Se-bWf"/>
+                        <outlet property="timeLabel" destination="nEP-sF-AlA" id="guX-8u-I2A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kenny" width="272" height="366"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
